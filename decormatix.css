@@ -1,0 +1,184 @@
+/*  Decormatix  */
+
+/*  ********************  Setters  ********************  */
+.open{
+	min-height:100px;
+}
+#dynamixer{
+	border-top:#ffffff 1px solid; border-right:#ffffff 1px solid; 
+	border-bottom:#000000 1px solid; border-left:#000000 1px solid;
+	color:#56ccf2;
+	background-color:#eb5757;
+	height:max-content; 
+	width:max-content;
+	text-align:justify;
+	position:fixed;
+	z-index:1000;
+	top:calc(100% - 55px);
+	left:calc(100% - 135px);
+	user-select: none;
+	cursor:pointer;
+	opacity:0.6;
+	border-radius:20px;
+	padding:8px;
+	/* transition:all cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.5s; */
+	transition: all 0.3s ease-out;
+}
+#dynamixer:active{
+	border-top:1px solid #000000; border-right:1px solid#000000;
+	border-bottom:#ffffff 1px solid; border-left:#ffffff 1px solid;
+}
+#dynamixer:hover{
+	opacity:1;
+	height:100px;
+	width:150px;
+	top:calc(100% - 120px);
+	left:calc(100% - 150px);
+	text-align:center;
+	/* padding-top:36px ; */
+	font-size: 24pt;
+}
+
+/*  ********************  Decorators  ********************  */
+/*  Background Color Set  */
+.az{ background-color:#333333 }
+	.bz{ background-color:#4f4f4f }
+		.cz{ background-color:#828282 }
+		.dz{ background-color:#bdbdbd }
+	.ez{ background-color:#e0e0e0 }
+.fz{ background-color:#f2f2f2 }
+
+.gz{ background-color:#eb5757 }
+	.hz{ background-color:#f2994a }
+		.iz{ background-color:#f2c94c }
+		.jz{ background-color:#219653 }
+	.kz{ background-color:#27ae60 }
+.lz{ background-color:#6fcf97 }
+
+.mz{ background-color:#2f80ed }
+	.nz{ background-color:#2d9cdb }
+		.oz{ background-color:#56ccf2 }
+	.pz{ background-color:#9b51e0 }
+.qz{ background-color:#bb6bd9 }
+
+.blk{ background-color:#000000; }
+    .whi{ background-color:#ffffff; }
+.rpu{ background-color:rebeccapurple; }
+
+/*  Font Colors  */
+.faz{ color:#333333 }
+	.fbz{ color:#4f4f4f }
+		.fcz{ color:#828282 }
+		.fdz{ color:#bdbdbd }
+	.fez{ color:#e0e0e0 }
+.ffz{ color:#f2f2f2 }
+
+.fgz{ color:#eb5757 }
+	.fhz{ color:#f2994a }
+		.fiz{ color:#f2c94c }
+		.fjz{ color:#219653 }
+	.fkz{ color:#27ae60 }
+.flz{ color:#6fcf97 }
+
+.fmz{ color:#2f80ed }
+	.fnz{ color:#2d9cdb }
+		.foz{ color:#56ccf2 }
+	.fpz{ color:#9b51e0 }
+.fqz{ color:#bb6bd9 }
+
+.fblk{ color:#000000; }
+    .fwhi{ color:#ffffff; }
+	.fsyf{ color: #4b1c86 }
+.frpu{ color:rebeccapurple; }
+
+.fblu{ color:#0fd3e6 }
+	.fpin{ color:#ff00fc }
+
+/*  *******************  Color Scheme-2  *******************  */
+.za{ background-color:#0fd3e6 }
+	.zb{ background-color:#ff00fc }
+
+.zc{ background-color: #f2ba49 }
+	.zd{ background-color: #ff815b }
+		.ze{ background-color: #dadedd }
+			.zf{ background-color: #fe5c71 }
+				.zg{ background-color: #f89e3e }
+					.zz{ background-color: #f3ca3a }
+				.zh{ background-color: #dfc33e }
+			.zi{ background-color: #fb685e }
+		.zj{ background-color: #e5562e }
+	.zk{ background-color: #5d8257 }
+.zl{ background-color: #749d71 }
+
+/* Gold: */
+.zm{ background-color: #ffffa5 }   
+	.zn{ background-color: #fffe91 }
+	.zo{ background-color: #eac56d }
+.zbp{ background-color: #ffe175 }
+
+.gold{ background-image: linear-gradient( 45deg to bottom left, #ffffa5 10%, #eac56d 22%,  #fffe91 90%, #ffe175 ) }
+.radial-purple{ background-image: radial-gradient( #6f0091, #350046 80%, #000000 ) }  /* Radial BG: */
+
+/*  *******************  Color Scheme-SYF  *******************  */
+/*  HEADER 1:  */
+.header{ color:#00526a }
+
+/*  SUB-HEADER & BODY:  */
+.body{ color:#777982 }
+
+/*  LINKS:  */
+.links{ color:#59bde5 } /* <-icons|text */
+.underline{ color:#1fb9e4 } /* <-underline */
+
+/*  CALL TO ACTION:  */
+.cta{ background-image: linear-gradient( 90deg, #7ee2ad 50%, #76d7b2 ); }
+
+/*  UNSET ELEMENTS:  */
+/* a. */
+.unset-a{ background-color:#333333; }
+
+/* b. */
+.unset-b{ background-image: linear-gradient(90deg, #67b6cf 50%, #56abcc ); }
+ 
+
+
+
+
+
+
+
+ 
+
+/*  Box Shadows Black  */
+/*  ********************  topLeft | tr | bottomRight | bl | centered  ********************  */
+.bs-tl{ box-shadow:-4px -4px 5px rgba(33,33,33,0.7) }
+.bs-tr{ box-shadow:4px -4px 5px rgba(33,33,33,0.7) }
+.bs-br{ box-shadow:4px 4px 5px rgba(33,33,33,0.7) }
+.bs-bl{ box-shadow:-4px 4px 5px rgba(33,33,33,0.7) }
+.bs-c{ 
+		box-shadow: 
+		-4px -4px 12px 5px rgba(33,33,33,0.1755), 
+		4px -4px 14px 7px rgba(33,33,33,0.08527), 
+		4px 4px 12px 5px rgba(33,33,33,0.1755), 
+		-4px 4px 14px 7px rgba(33,33,33,0.08527);
+	}
+/*  Box Shadows White  */
+.bs-cw{ 
+	box-shadow: 
+	-4px -4px 12px 5px rgba(255,255,255,0.1755), 
+	4px -4px 14px 7px rgba(255,255,255,0.08527), 
+	4px 4px 12px 5px rgba(255,255,255,0.1755), 
+	-4px 4px 14px 7px rgba(255,255,255,0.08527);
+}
+/*  ********************  Text Shadows  ********************  */
+.ts-tl{ text-shadow:-4px -4px 5px rgba(33,33,33,0.7) }
+.ts-tr{ text-shadow:4px -4px 5px rgba(33,33,33,0.7) }
+.ts-br{ text-shadow:4px 4px 5px rgba(33,33,33,0.7) }
+.ts-bl{ text-shadow:-4px 4px 5px rgba(33,33,33,0.7) }
+/*  ********************  Text Align********************  */
+.tal{ text-align:left; }
+.tar{ text-align:right; }
+.tac{ text-align:center; }
+.taj{ text-align:justify; }
+.tas{ text-align:start; }
+.tae{ text-align:end; }

@@ -1,0 +1,181 @@
+/*  https://www.youtube.com/watch?v=ViEAsAfBB9I  */
+
+/*  IFRAME inside of document to backdrop grid  */
+#gridframe{
+	border:0;
+	max-width: 100%;max-height:100%;
+		min-width:100%; min-height:100%;
+	z-index:-1;
+	position:fixed; 
+	top:0; left:0;
+	overflow:hidden;
+	display:block;
+}
+
+/* Setting up our grid */ 
+.show-column{
+    background-color:darkgrey; 
+    opacity:0.25; 
+    min-height:100vh;
+	border:1px solid #3c3c3c;
+} 
+.grid {
+	display:-webkit-box;
+		display:-ms-flexbox;
+			display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+	max-width:100vw;
+		min-width: 100%;
+	min-height:100vh; 
+	margin-right:0;
+		margin-left:0;
+	padding:0px 19px;
+	position:fixed;
+	top:0;
+		left:0;
+	z-index:-1; 
+	opacity:0.5;
+}
+/*  This line of code makes the left-most column align to the left of the screen  */
+.twelve:first-child,.eleven:first-child,.ten:first-child,.nine:first-child,.eight:first-child,.seven:first-child,.six:first-child,.five:first-child,.four:first-child,.three:first-child,
+.two:first-child{ margin-left: 0; }
+/*  This line of code removes the column space for the last element so it doesn't spill over past the scrollbar  */
+.one:last-child,.two:last-child,.three:last-child,.four:last-child,.five:last-child,.six:last-child,.seven:last-child,.eight:last-child,.nine:last-child,.ten:last-child,.eleven:last-child,
+.twelve:last-child{ margin-right:0; } 
+
+.twelve {
+	max-width:98%;
+	min-width:98%;
+	float:left;
+	margin-right:0%;
+}
+.eleven {
+	max-width: 91.5%;
+	min-width: 91.5%;
+	float: left;
+	margin-right: 2%;
+}
+.ten {
+	max-width: 83%;
+	min-width: 83%;
+	float: left;
+	margin-right: 2%;
+}
+.nine {
+	max-width: 74.5%;
+	min-width: 74.5%;
+	float: left;
+	margin-right: 2%;
+}
+.atehalf{
+	max-width: 70.5%;
+	min-width: 70.5%;
+	float: left;
+	margin-right: 1%;  
+}
+.eight {
+	max-width: 66%;
+	min-width: 66%;
+	float: left;
+	margin-right: 2%;
+}
+.seven {
+	max-width: 57.5%;
+	min-width: 57.5%;
+	float: left;
+	margin-right: 2%;
+}
+.six {
+	max-width: 49%; 
+	min-width: 49%; 
+	float: left;
+	margin-right: 2%;
+}
+.five {
+	max-width: 40.5%; 
+	min-width: 40.5%; 
+	margin-right: 2%;
+	float:left;
+}
+.four {
+	max-width: 32%;
+	min-width: 32%;
+	float:left;
+	margin-right: 2%;
+}
+.threehalf{ 
+	max-width: 28%;
+	min-width: 28%;
+	float:left;
+	margin-right: 0px;
+}
+.three {
+	max-width: 23.5%;
+	min-width: 23.5%;
+	float:left;
+	margin-right: 2%;
+}
+.two {
+	max-width: 15%;
+	min-width: 15%;
+	float:left;
+	margin-right: 2%;
+
+}
+.one {
+	max-width: 6.5%;
+	min-width: 6.5%;
+	float:left;
+	margin-right: 2%;
+}
+.row {
+	min-height:min-content;
+    display:-webkit-box;
+    	display:-ms-flexbox;
+    		display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:row;
+	        flex-direction:row; 
+	-ms-flex-wrap:wrap; 
+	    flex-wrap:wrap;
+		min-width: 100%;  
+	margin-right:0%;
+		margin-left:0;
+	padding: 0px 0px;
+	clear: both; 
+}
+
+/*  Setup Text  */
+.grid-text{
+	text-align:center; 
+	top:100%;
+	color:black;
+	opacity:1;
+	display:block;
+	min-height:100%;
+}
+.text-row{
+	display:-webkit-box;
+	display:-ms-flexbox;
+		display:flex;
+-webkit-box-orient:horizontal;
+-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+		flex-direction:row; 
+-ms-flex-wrap:wrap; 
+	flex-wrap:wrap;
+	min-width: 100%;  
+	max-width:100%;
+margin-right:0;
+	margin-left:0;
+padding: 0px 19px; 
+opacity:1;
+position:fixed;
+bottom:0;
+left:0;
+min-height:20px; 
+}
